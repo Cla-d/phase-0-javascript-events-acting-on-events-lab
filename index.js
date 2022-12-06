@@ -3,6 +3,9 @@ const dodger = document.getElementById("dodger");
 // change color to pink #FF69B
 dodger.style.backgroundColor = "#FF69B4";
 
+//moving element up
+dodger.style.bottom = "100px";
+
 // function that moves dogger to the left
 function moveDodgerLeft() {
     const leftNumbers = dodger.style.left.replace("px", "");
@@ -31,4 +34,5 @@ document.addEventListener("keydown", function (e) {
       moveDodgerRight();
     }
   });
+
 
